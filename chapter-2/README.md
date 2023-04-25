@@ -1,4 +1,4 @@
-# chapter-2 使用 string 和 string_view
+# Chapter-2 使用 string 和 string_view
 
 ## 2-1
 

@@ -1,4 +1,4 @@
-# chapter-19 函数指针，函数对象，lambda 表达式
+# Chapter-19 函数指针，函数对象，lambda 表达式
 
 ## 19-1
 

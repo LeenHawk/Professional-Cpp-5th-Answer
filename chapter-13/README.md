@@ -1,4 +1,4 @@
-# chapter-13 C++ I/O 揭秘
+# Chapter-13 C++ I/O 揭秘
 
 ## 13-1
 
