@@ -15,21 +15,8 @@ set(CMAKE_EXPERIMENTAL_CXX_MODULE_DYNDEP ON)
 # Clang need to disable c++ extension
 if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
     set(CMAKE_CXX_EXTENSIONS OFF)
+elseif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+    set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT ${CMAKE_PROJECT_NAME})
 endif()
 
 set(CMAKE_CXX_STANDARD 23)
-
-project(hello-world)
-
-add_executable(hello-world)
-target_sources(hello-world
-    PUBLIC
-    main.cpp
-)
-target_sources(hello-world
-  PUBLIC
-    FILE_SET all_my_modules TYPE CXX_MODULES FILES
-    a.cppm
-)
-
-set_property(DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} PROPERTY VS_STARTUP_PROJECT hello-world)
