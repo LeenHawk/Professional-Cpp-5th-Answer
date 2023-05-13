@@ -12,9 +12,9 @@ for (int index { 0 }; index < numberOfElements; ++index) {
     values[index] = index;
 }
 // Set last value to 99.
-values[10] = 99;
+values[10] = 99;//最后一位是values[9]，越界了
 // Print all values.
-for (int index { 0 }; index <= numberOfElements; ++index) {
+for (int index { 0 }; index <= numberOfElements; ++index) {//<=导致越界
     cout << values[index] << " ";
 }
 ```
@@ -22,6 +22,21 @@ for (int index { 0 }; index <= numberOfElements; ++index) {
 ## 7-2
 
 使用安全的现代 C++ 工具，重写上题中的代码片段。
+
+```c++
+constexpr size_t numberOfElements { 10 };
+std::array<size_t,numberOfElements> values;
+// Set values to their index value.
+for (int index { 0 }; index < numberOfElements; ++index) {
+    values[index] = index;
+}
+// Set last value to 99.
+values[9] = 99;
+// Print all values.
+for (int index { 0 }; index < numberOfElements; ++index) {
+    cout << values[index] << " ";
+}
+```
 
 ## 7-3
 
@@ -38,6 +53,15 @@ void fillWithM(char* text)
     while (text[i] != '\0') {
         text[i] = 'm';
         i++;
+    }
+}
+```
+
+```c++
+void fillWithM(string& text)
+{
+    for(auto& i:text) {
+        i = 'm';
     }
 }
 ```
