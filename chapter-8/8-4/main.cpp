@@ -10,9 +10,9 @@ class Person{
         char m_FirstUnitOfName;
     public:
         Person()=default;
-        Person(const string_view firstName,const string_view lastName): \
-            m_FirstName(firstName),m_LastName(lastName),m_FirstUnitOfName(firstName.front()){};
-        
+        Person(const string_view firstName,const string_view lastName):Person(firstName,lastName,firstName.front()){};
+        Person(const string_view firstName,const string_view lastName,const char firstUnitOfName): \
+            m_FirstName(firstName),m_LastName(lastName),m_FirstUnitOfName(firstUnitOfName){};
         string getFirstName() const{
             return m_FirstName;
         };

@@ -4,3 +4,4 @@ Exercises/*
 Code/*
 .vscode/*
 build/*
+*.code-workspace
