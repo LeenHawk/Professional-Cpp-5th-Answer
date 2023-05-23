@@ -1,7 +1,6 @@
 export module Simulator:car;
 
-import <iostream>;
-import <format>;
+import std;
 import :internals;
 
 export namespace Simulator {

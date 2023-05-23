@@ -1,7 +1,4 @@
-import <iostream>;
-import <format>;
-import <vector>;
-import <string>;
+import std;
 using namespace std;
 
 int main()

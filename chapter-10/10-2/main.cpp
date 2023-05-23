@@ -1,5 +1,4 @@
-import <iostream>;
-
+import std;
 import hr;
 using namespace std;
 using namespace HR;

@@ -1,7 +1,6 @@
 export module concat;
 
-import <concepts>;
-import <string>;
+import std;
 
 template <typename T>
 concept CouldToString = requires(const T& t) {std::to_string(t);};

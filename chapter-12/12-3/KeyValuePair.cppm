@@ -1,7 +1,6 @@
 export module KeyValuePair;
 
-import <algorithm>;
-import <concepts>;
+import std;
 
 export template <std::integral Key, std::floating_point Value>
 class KeyValuePair{

@@ -1,6 +1,4 @@
-import <iostream>;
-import <memory>;
-import <vector>;
+import std;
 import hr;
 using namespace std;
 

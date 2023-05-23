@@ -1,7 +1,6 @@
 export module person;
 
-import <string>;
-import <format>;
+import std;
 export namespace HR
 {
     class Person

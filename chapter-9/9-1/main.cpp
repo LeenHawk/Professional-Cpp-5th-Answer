@@ -1,7 +1,4 @@
-import <iostream>;
-import <format>;
-import <string>;
-import <utility>;
+import std;
 using namespace std;
 
 class Person{

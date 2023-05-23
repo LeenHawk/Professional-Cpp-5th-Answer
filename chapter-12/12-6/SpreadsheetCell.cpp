@@ -1,7 +1,6 @@
 module spreadsheet_cell;
 
-import <charconv>;
-import <stdexcept>;
+import std;
 
 using namespace std;
 

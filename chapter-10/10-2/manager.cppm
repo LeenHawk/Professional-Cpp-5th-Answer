@@ -1,6 +1,6 @@
 export module manager;
 import employee;
-import <string>;
+import std;
 
 export namespace HR
 {

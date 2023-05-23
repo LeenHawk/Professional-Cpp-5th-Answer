@@ -1,6 +1,6 @@
 export module airline_ticket;
 
-import <string>;
+import std;
 
 export class AirlineTicket
 {

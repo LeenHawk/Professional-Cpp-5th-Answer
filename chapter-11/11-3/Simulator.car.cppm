@@ -1,6 +1,6 @@
 export module Simulator:car;
 
-import <iostream>;
+import std;
 
 export namespace Simulator {
 class CarSimulator {

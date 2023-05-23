@@ -1,6 +1,6 @@
 module Simulator;
 
-import <iostream>;
+import std;
 
 using namespace std;
 

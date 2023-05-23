@@ -1,6 +1,4 @@
-import <iostream>;
-import <format>;
-import <array>;
+import std;
 import employee;
 using namespace std;
 

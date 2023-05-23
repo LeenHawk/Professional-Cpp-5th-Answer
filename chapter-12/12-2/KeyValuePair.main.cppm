@@ -1,6 +1,6 @@
 export module KeyValuePair:main;
 
-import <algorithm>;
+import std;
 
 export template <typename Key,typename Value>
 class KeyValuePair{

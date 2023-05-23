@@ -1,6 +1,4 @@
-import <iostream>;
-import <format>;
-import <string>;
+import std;
 using namespace std;
 
 string replace_all(string str, const string &key, const string &newkey)

@@ -1,7 +1,6 @@
 export module person;
 
-import <string>;
-import <memory>;
+import std;
 
 export class Person{
     public:

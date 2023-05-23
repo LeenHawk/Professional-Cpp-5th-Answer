@@ -1,6 +1,6 @@
 export module Simulator:internals;
 
-import <iostream>;
+import std;
 
 export namespace Simulator {
   double convertMilesToKm(double miles){

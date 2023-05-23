@@ -1,5 +1,4 @@
-import <iostream>;
-import <format>;
+import std;
 import KeyValuePair;
 using namespace std;
 int main(){

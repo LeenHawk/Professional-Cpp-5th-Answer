@@ -1,7 +1,4 @@
-import <iostream>;
-import <format>;
-import <string>;
-import <compare>;
+import std;
 import hr;
 using namespace std;
 using namespace HR;

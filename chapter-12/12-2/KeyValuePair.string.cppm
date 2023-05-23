@@ -1,7 +1,6 @@
 export module KeyValuePair:string;
 
-import <algorithm>;
-import <string>;
+import std;
 import :main;
 
 export template <>

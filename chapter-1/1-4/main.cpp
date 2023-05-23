@@ -1,6 +1,4 @@
-import <iostream>;
-import <format>;
-import <vector>;
+import std;
 import employee;
 using namespace std;
 

@@ -1,5 +1,4 @@
-import <iostream>;
-import <format>;
+import std;
 using namespace std;
 
 class Point{

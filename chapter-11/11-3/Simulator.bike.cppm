@@ -1,6 +1,6 @@
 export module Simulator:bike;
 
-import <iostream>;
+import std;
 
 export namespace Simulator {
   class BikeSimulator {

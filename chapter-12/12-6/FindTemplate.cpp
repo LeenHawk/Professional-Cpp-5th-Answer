@@ -1,8 +1,4 @@
-import <charconv>;
-import <stdexcept>;
-import <iostream>;
-import <array>;
-import <concepts>;
+import std;
 import spreadsheet_cell;
 
 using namespace std;

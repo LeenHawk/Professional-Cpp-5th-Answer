@@ -1,6 +1,6 @@
 module person;
 
-import <string>;
+import std;
 
 using namespace std;
 

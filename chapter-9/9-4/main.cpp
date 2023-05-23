@@ -1,6 +1,4 @@
-import <iostream>;
-import <format>;
-import <string>;
+import std;
 import person;
 using namespace std;
 

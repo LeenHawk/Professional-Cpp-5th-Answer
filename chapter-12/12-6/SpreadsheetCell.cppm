@@ -1,8 +1,6 @@
 export module spreadsheet_cell;
 
-import <string>;
-import <string_view>;
-import <compare>;
+import std;
 
 export class SpreadsheetCell
 {

@@ -1,5 +1,4 @@
-import <iostream>;
-import <format>;
+import std;
 import concat;
 using namespace std;
 int main(){
