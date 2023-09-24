@@ -1,8 +1,8 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.25)
 
-include("../../module.cmake")
-
 project(12-5)
+
+include("../../module.cmake")
 
 add_executable(${CMAKE_PROJECT_NAME})
 target_sources(${CMAKE_PROJECT_NAME}
