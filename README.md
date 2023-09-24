@@ -27,7 +27,7 @@ ninja -C build
 记 `build` 文件夹为 `<build>`
 
 
-编译指令为在项目同级文件夹输入:
+编译指令为在项目同级文件夹输入（重点要给cmake指定`LIBCXX_BUILD`变量和编译器）:
 
 ```shell
 mkdir build

@@ -1,7 +1,7 @@
-*/build/*
-*/*/build/*
+**/build/*
 Exercises/*
 Code/*
 .vscode/*
 build/*
 *.code-workspace
+**/.vscode/*
