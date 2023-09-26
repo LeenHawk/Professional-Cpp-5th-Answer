@@ -40,11 +40,11 @@ export namespace HR
             m_FirstUnitOfName = c;
         }
 
-        virtual [[nodiscard]] bool operator==(const Person &rhs) const
+        [[nodiscard]] virtual bool operator==(const Person &rhs) const
         {
             return (m_FirstUnitOfName == rhs.getFirstUnitOfName() && m_FirstName == rhs.getFirstName() && m_LastName == rhs.getLastName());
         };
-        virtual [[nodiscard]] std::strong_ordering operator<=>(const Person &rhs) const
+        [[nodiscard]] virtual std::strong_ordering operator<=>(const Person &rhs) const
         {
             if (m_FirstUnitOfName != rhs.getFirstUnitOfName())
             {

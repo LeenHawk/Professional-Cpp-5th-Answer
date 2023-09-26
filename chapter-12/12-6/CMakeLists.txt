@@ -7,9 +7,10 @@ include("../../module.cmake")
 add_executable(12-6)
 target_sources(12-6
     PUBLIC
-    FILE_SET all_my_modules TYPE CXX_MODULES FILES
     FindTemplate.cpp
+    PUBLIC
+    FILE_SET all_my_modules TYPE CXX_MODULES FILES
     SpreadsheetCell.cppm
-    PRIVATE 
+    PUBLIC
     SpreadsheetCell.cpp
 )
