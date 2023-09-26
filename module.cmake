@@ -30,21 +30,12 @@ if (CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
         FetchContent_Populate(std)
         add_subdirectory(${std_SOURCE_DIR} ${std_BINARY_DIR} EXCLUDE_FROM_ALL)
     endif()
-
-    #
-        # Adjust project compiler flags
-    #
-
-        add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-fprebuilt-module-path=${CMAKE_BINARY_DIR}/_deps/std-build/CMakeFiles/std.dir/>)
-        add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-nostdinc++>)
+    add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-fprebuilt-module-path=${CMAKE_BINARY_DIR}/_deps/std-build/CMakeFiles/std.dir/>)
+    add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-nostdinc++>)
         # The include path needs to be set to be able to use macros from headers.
         # For example from, the headers <cassert> and <version>.
-        add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-isystem>)
-        add_compile_options($<$<COMPILE_LANGUAGE:CXX>:${LIBCXX_BUILD}/include/c++/v1>)
-
-    #
-    # Adjust project linker flags
-    #
+    add_compile_options($<$<COMPILE_LANGUAGE:CXX>:-isystem>)
+    add_compile_options($<$<COMPILE_LANGUAGE:CXX>:${LIBCXX_BUILD}/include/c++/v1>)
 
     add_link_options($<$<COMPILE_LANGUAGE:CXX>:-nostdlib++>)
     add_link_options($<$<COMPILE_LANGUAGE:CXX>:-L${LIBCXX_BUILD}/lib>)

@@ -4,8 +4,8 @@ project(12-6)
 
 include("../../module.cmake")
 
-add_executable(${CMAKE_PROJECT_NAME})
-target_sources(${CMAKE_PROJECT_NAME}
+add_executable(12-6)
+target_sources(12-6
     PUBLIC
     FILE_SET all_my_modules TYPE CXX_MODULES FILES
     FindTemplate.cpp

@@ -4,13 +4,13 @@ project(10-1)
 
 include("../../module.cmake")
 
-add_executable(${CMAKE_PROJECT_NAME})
-target_sources(${CMAKE_PROJECT_NAME}
+add_executable(10-1)
+target_sources(10-1
+    PUBLIC
+    main.cpp
     PUBLIC
     FILE_SET all_my_modules TYPE CXX_MODULES FILES
-    main.cpp
     hr.cppm
-    PRIVATE
     person.cppm
     employee.cppm
     manager.cppm 

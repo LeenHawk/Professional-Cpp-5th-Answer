@@ -4,12 +4,13 @@ project(1-6)
 
 include("../../module.cmake")
 
-add_executable(${CMAKE_PROJECT_NAME})
-target_sources(${CMAKE_PROJECT_NAME}
-    PUBLIC
-    FILE_SET all_my_modules TYPE CXX_MODULES FILES
-    main.cpp
-    AirlineTicket.cppm
-    PRIVATE
-    AirlineTicket.cpp
+add_executable(1-6)
+target_sources(1-6
+PUBLIC
+main.cpp
+PUBLIC
+FILE_SET all_my_modules TYPE CXX_MODULES FILES
+AirlineTicket.cppm
+PRIVATE
+AirlineTicket.cpp
 )

@@ -4,8 +4,8 @@ project(1-1)
 
 include("../../module.cmake")
 
-add_executable(${CMAKE_PROJECT_NAME})
-target_sources(${CMAKE_PROJECT_NAME}
+add_executable(1-1)
+target_sources(1-1
     PUBLIC
     main.cpp
     PRIVATE
